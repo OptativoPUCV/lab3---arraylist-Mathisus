@@ -85,3 +85,14 @@ arraylist.c:79:15: error: expected ‘;’ before ‘}’ token
       | ~              
 Compilation failed
 f489aaa
+Sun 02 Apr 2023 04:06:39 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘clean’:
+arraylist.c:78:42: error: expected ‘)’ before numeric constant
+   78 |   l->data = realloc(l->data, sizeof(void)2);
+      |                    ~                     ^
+      |                                          )
+Compilation failed
+f93e813
