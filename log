@@ -68,3 +68,20 @@ arraylist.c:78:42: error: expected ‘)’ before numeric constant
       |                                          )
 Compilation failed
 f0af1fe
+Sun 02 Apr 2023 04:06:19 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘clean’:
+arraylist.c:78:42: error: expected ‘)’ before ‘(’ token
+   78 |   l->data = realloc(l->data, sizeof(void) (2);
+      |                    ~                     ^~
+      |                                          )
+arraylist.c:79:15: error: expected ‘;’ before ‘}’ token
+   79 |   l->size = 0;
+      |               ^
+      |               ;
+   80 | }
+      | ~              
+Compilation failed
+f489aaa
