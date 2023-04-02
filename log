@@ -140,3 +140,20 @@ arraylist.c:101:42: error: expected ‘)’ before ‘(’ token
       |                                          )
 Compilation failed
 ca0c549
+Sun 02 Apr 2023 04:09:24 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘clean’:
+arraylist.c:101:42: error: expected ‘)’ before ‘(’ token
+  101 |   l->data = realloc(l->data, sizeof(void)((2));
+      |                    ~                     ^
+      |                                          )
+arraylist.c:102:15: error: expected ‘;’ before ‘}’ token
+  102 |   l->size = 0;
+      |               ^
+      |               ;
+  103 | }
+      | ~              
+Compilation failed
+febfd9a
